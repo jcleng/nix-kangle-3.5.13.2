@@ -39,5 +39,7 @@ To see the contents of the .drv file, run: `nix show-derivation $(nix-instantiat
 
 ```shell
 # debug run
-kangle -d 3
+sudo ~/.nix-profile/bin/kangle -d 3
+# centos runing
+# wsl not runing
 ```
