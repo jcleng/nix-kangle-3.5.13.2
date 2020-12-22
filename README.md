@@ -1,6 +1,6 @@
-# Nix Hello World
+# Nix pack kangle-3.5.13.2
 
-This is just a simple program to experience on Nix derivation/packages.
+This is forked https://github.com/zetavg/nix-hello-world
 
 ## Build or Install in Nix Environment
 
@@ -30,13 +30,6 @@ You can get the out path by running `nix-store -q --outputs $(nix-instantiate de
 
 To see the contents of the .drv file, run: `nix show-derivation $(nix-instantiate default.nix)` or `nix show-derivation $(nix-store -q --deriver $(nix eval '("${import ./default.nix}")' | cut -d '"' -f 1))`.
 
-## Build Manually
-
-You can build it manually with `gcc` by running:
-
-```bash
-gcc src/hello.c -o hello
-```
 
 ## References
 

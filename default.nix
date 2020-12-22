@@ -20,14 +20,14 @@ with import <nixpkgs> {}; stdenv.mkDerivation {
     echo $out
     echo $src
     echo "初始化环境:"
-    ./configure
+    ./configure --prefix=$out
     echo "开始编译:"
     make -j4
-    make install
   '';
   installPhase = ''
     # nix-env -i -f default.nix
-    echo "编译会自动安装."
+    echo "安装:"
+    make install
     # mkdir -p "$out/bin"
     # 当前目录是bin
     # cp ./hello "$out/bin/hellonew"
