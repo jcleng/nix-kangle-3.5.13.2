@@ -20,7 +20,7 @@ with import <nixpkgs> {}; stdenv.mkDerivation {
     echo $out
     echo $src
     echo "初始化环境:"
-    ./configure --prefix=$out
+    ./configure --prefix=$out --exec-prefix=$out
     echo "开始编译:"
     make -j4
   '';
