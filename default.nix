@@ -28,9 +28,5 @@ with import <nixpkgs> {}; stdenv.mkDerivation {
     # nix-env -i -f default.nix
     echo "安装:"
     make install
-    # mkdir -p "$out/bin"
-    # 当前目录是bin
-    # cp ./hello "$out/bin/hellonew"
-    # ln -s $out/bin/kangle $out/bin/kangle
   '';
 }

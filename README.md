@@ -34,3 +34,10 @@ To see the contents of the .drv file, run: `nix show-derivation $(nix-instantiat
 ## References
 
 - [Nix Pills](https://nixos.org/nixos/nix-pills/)
+
+## run
+
+```shell
+# debug run
+kangle -d 3
+```
