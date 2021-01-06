@@ -1,4 +1,4 @@
-# Nix pack kangle-3.5.13.2
+# Nix pack kangle-3.5.13.2(linux-centos7)
 
 This is forked https://github.com/zetavg/nix-hello-world
 
