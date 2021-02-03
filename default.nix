@@ -7,7 +7,7 @@ with import <nixpkgs> {}; stdenv.mkDerivation {
 
   # Dependencies
   # See: https://nixos.org/nixpkgs/manual/#ssec-stdenv-dependencies
-  buildInputs = [ coreutils gcc9.3.0 pcre openssl libaio zlib pcre];
+  buildInputs = [ coreutils gcc9 pcre openssl libaio zlib pcre];
 
   # Build Phases
   # See: https://nixos.org/nixpkgs/manual/#sec-stdenv-phases
