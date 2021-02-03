@@ -1,6 +1,5 @@
 # Nix pack kangle-3.5.13.2(linux-centos7)
 
-This is forked https://github.com/zetavg/nix-hello-world
 
 ## Build or Install in Nix Environment
 
@@ -42,4 +41,22 @@ To see the contents of the .drv file, run: `nix show-derivation $(nix-instantiat
 sudo ~/.nix-profile/bin/kangle -d 3
 # centos runing
 # wsl not runing
+```
+### Share Use
+
+```shell
+# add channel
+nix-channel --add https://github.com/jcleng/nix-kangle-3.5.13.2/archive/master.tar.gz kangle
+
+# use cachix binary file
+cachix use jcleng-pub
+
+# update
+nix-channel --update
+
+# search
+nix-env -aqP|grep kangle
+
+# install
+nix-env -i kangle
 ```
